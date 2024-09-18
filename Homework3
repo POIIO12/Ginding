@@ -49,14 +49,10 @@ double multiply(double a, double b){
     c = a*b;
     return c;
 }
-double sum(int a, int b){
-    int c;
-    c = a;
-    int d;
-    d = 0;
-    for(c <= b; c++;){
-        d = d + c;
-        c++;
+int sum(int a, int b) {
+    int d = 0;
+    for (int i = a; i <= b; ++i) {
+        d += i;
     }
     return d;
 }
@@ -105,11 +101,10 @@ char makeCapital(char &letter2){
     letter2 = letter2 - 32;
     return letter2;
 }
-int swapValues(int &a, int &b){
-    int c = a;
+void swapValues(int &a, int &b) {
+    int temp = a;
     a = b;
-    b = c;
-    return a, b;
+    b = temp;
 }
 int main()
 {
